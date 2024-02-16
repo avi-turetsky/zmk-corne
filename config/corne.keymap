@@ -16,7 +16,7 @@
             bindings = <&mo>, <&kp>;
 
             #binding-cells = <2>;
-            tapping-term-ms = <150>;
+            tapping-term-ms = <300>;
         };
     };
 
@@ -31,10 +31,10 @@
             //                    | GUI | LWR | SPC |   | ENT | RSE  | ALT |
 
             bindings = <
-&kp TAB    &kp B  &kp L  &kp D     &kp W  &kp Z                &kp Y    &kp F  &kp O      &kp U    &kp J     &kp BSPC
-&kp LCTRL  &kp N  &kp R  &kp T     &kp S  &kp G                &kp Y    &kp H  &kp A      &kp E    &kp I     &kp SQT
-&kp LSHFT  &kp Q  &kp X  &kp M     &kp C  &kp V                &kp K    &kp P  &kp COMMA  &kp DOT  &kp FSLH  &kp ESC
-                         &kp LGUI  &mo 1  &SpaceSYM 2 SPACE    &kp RET  &mo 2  &kp RALT
+&kp TAB    &kp B  &kp L  &kp D     &kp W  &kp Z            &kp Y              &kp F              &kp O      &kp U    &kp J     &kp BSPC
+&kp LCTRL  &kp N  &kp R  &kp T     &kp S  &kp G            &kp Y              &kp H              &kp A      &kp E    &kp I     &kp SQT
+&kp LSHFT  &kp Q  &kp X  &kp M     &kp C  &kp V            &kp K              &kp P              &kp COMMA  &kp DOT  &kp FSLH  &kp ESC
+                         &kp LGUI  &mo 1  &kp BACKSPACE    &SpaceSYM 2 SPACE  &SpaceSYM 2 ENTER  &kp RALT
             >;
         };
 
@@ -65,6 +65,15 @@
 &kp LCTRL  &trans    &trans  &trans    &trans    &trans       &kp MINUS  &kp EQUAL  &kp LBKT         &kp RBKT  &kp BSLH  &kp GRAVE
 &kp LSHFT  &trans    &trans  &trans    &trans    &trans       &kp UNDER  &kp PLUS   &kp LBRC         &kp RBRC  &kp PIPE  &kp TILDE
                              &kp LGUI  &trans    &kp SPACE    &kp RET    &trans     &kp RALT
+            >;
+        };
+
+        layer_3 {
+            bindings = <
+&trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans  &trans
+                        &trans  &trans  &trans    &trans  &trans  &trans
             >;
         };
     };
